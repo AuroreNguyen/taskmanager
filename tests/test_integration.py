@@ -8,6 +8,7 @@ from app import create_app
 from extensions import db
 from models import User, Task
 
+
 @pytest.fixture
 def client():
     os.environ['DATABASE_URL'] = 'sqlite:///:memory:'
